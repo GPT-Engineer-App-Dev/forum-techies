@@ -4,6 +4,8 @@ import Category from "./pages/Category.jsx";
 import Thread from "./pages/Thread.jsx";
 import NewThread from "./pages/NewThread.jsx";
 import Navbar from "./components/Navbar.jsx";
+import Register from "./pages/Register.jsx";
+import Login from "./pages/Login.jsx";
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
         <Route exact path="/category/:categoryName" element={<Category />} />
         <Route exact path="/thread/:threadId" element={<Thread />} />
         <Route exact path="/new-thread" element={<NewThread />} />
+        <Route exact path="/register" element={<Register />} />
+        <Route exact path="/login" element={<Login />} />
       </Routes>
     </Router>
   );
